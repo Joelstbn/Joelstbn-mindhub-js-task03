@@ -17,13 +17,13 @@ contenedorChecks.addEventListener('change',superFiltro)
   
   
 // Llamado de funciones
-pintarTarjetas(events)
-crearCheckboxes(events)
+pintarTarjetas(pastEvents)
+crearCheckboxes(pastEvents)
   
   
 // Funciones
 function superFiltro(){
-    let arrayFiltrado1 = filtrarPorTexto(events, input.value)
+    let arrayFiltrado1 = filtrarPorTexto(pastEvents, input.value)
     let arrayFiltrado2 = filtrarPorCategoria(arrayFiltrado1)
     pintarTarjetas(arrayFiltrado2)
 }
